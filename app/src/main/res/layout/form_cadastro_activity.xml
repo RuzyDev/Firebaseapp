@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastro
+        usúario"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:fontFamily="sans-serif-black"></TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-black"
+        android:textSize="30dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/Editnome"
+        android:layout_width="200dp"
+        android:hint="Digite o nome:"
+        android:textColorHint="#DCD8D8"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:ems="10"
+        android:inputType="text" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-black"
+        android:textSize="30dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/Editemail"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite a email:"
+        android:textColorHint="#DCD8D8"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:inputType="textEmailAddress"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-black"
+        android:textSize="30dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/Editsenha"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite o Senha:"
+        android:textColorHint="#DCD8D8"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:inputType="numberPassword"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+
+    <Button
+        android:id="@+id/cadastrar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/teal_700"
+        android:onClick="cadastrar"
+        android:text="Cadastrar"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+
+    </ImageView>
+
+
+</LinearLayout>
