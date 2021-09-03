@@ -1,118 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:background="@color/black"
-    android:gravity="center"
+    tools:context=".FormLogin"
     >
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatImageView
+        android:src="@drawable/landscapecadastro"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.appcompat.widget.AppCompatImageView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_layer_gradient">
+
+    </View>
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cadastro
-        usúario"
-        android:textColor="@color/white"
-        android:textAlignment="center"
-        android:textSize="50dp"
-        android:fontFamily="sans-serif-black"></TextView>
+        app:layout_constraintBottom_toBottomOf="parent">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="51dp">
-
-    </ImageView>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nome"
-        android:textAlignment="center"
-        android:fontFamily="sans-serif-black"
-        android:textSize="30dp"
-        android:textColor="@color/white"/>
-
-    <EditText
-        android:id="@+id/Editnome"
-        android:layout_width="200dp"
-        android:hint="Digite o nome:"
-        android:textColorHint="#DCD8D8"
-        android:layout_height="wrap_content"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:ems="10"
-        android:inputType="text" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Email"
-        android:textAlignment="center"
-        android:fontFamily="sans-serif-black"
-        android:textSize="30dp"
-        android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/Slogan"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:text="Faça o seu cadastro"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="18dp"
+                app:layout_constraintBottom_toTopOf="@id/Editnome"
+                android:layout_height="wrap_content">
+            </TextView>
 
-    <EditText
-        android:id="@+id/Editemail"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Digite a email:"
-        android:textColorHint="#DCD8D8"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:inputType="textEmailAddress"
-        />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/Editnome"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="18dp"
+                android:hint="Nome"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:background="@drawable/editeextbutton"
+                app:layout_constraintBottom_toTopOf="@+id/Editemail">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="10dp">
+            </androidx.appcompat.widget.AppCompatEditText>
 
-    </ImageView>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/Editemail"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="18dp"
+                android:hint="Email"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:background="@drawable/editeextbutton"
+                app:layout_constraintBottom_toTopOf="@+id/Editsenha">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Senha"
-        android:textAlignment="center"
-        android:fontFamily="sans-serif-black"
-        android:textSize="30dp"
-        android:textColor="@color/white"/>
+            </androidx.appcompat.widget.AppCompatEditText>
 
-    <EditText
-        android:id="@+id/Editsenha"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Digite o Senha:"
-        android:textColorHint="#DCD8D8"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:inputType="numberPassword"
-        />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/Editsenha"
+                android:inputType="textPassword"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="36dp"
+                android:hint="Senha"
+                android:imeOptions="actionDone"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:background="@drawable/editeextbutton"
+                app:layout_constraintBottom_toTopOf="@+id/cadastrar">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="10dp"/>
+            </androidx.appcompat.widget.AppCompatEditText>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:id="@+id/cadastrar"
+                android:text="Cadastrar-se"
+                app:layout_constraintBottom_toTopOf="@id/irlogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="18dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="36dp"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_button_normal"
+                android:textColor="@android:color/white">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/irlogin"
+                android:layout_width="match_parent"
+                android:text="Login"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:layout_marginBottom="36dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_height="wrap_content">
+
+            </androidx.appcompat.widget.AppCompatTextView>
 
 
-    <Button
-        android:id="@+id/cadastrar"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="@color/teal_700"
-        android:onClick="cadastrar"
-        android:text="Cadastrar"
-        android:textColor="@color/white"
-        />
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="10dp">
-
-    </ImageView>
-
-
-</LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

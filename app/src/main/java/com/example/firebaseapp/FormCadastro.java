@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,6 +32,7 @@ public class FormCadastro extends AppCompatActivity {
 
     private EditText Editnome,Editemail,Editsenha;
     private Button cadastrar;
+    private TextView irlogin;
     String[] mensagens = {"Preencha todos os campos","Cadastro realizado com sucesso!!!"};
     String usuarioID;
 
@@ -61,6 +63,17 @@ public class FormCadastro extends AppCompatActivity {
 
             }
         });
+
+        irlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(FormCadastro.this,FormLogin.class);
+                startActivity(intent);
+
+            }
+        });
+
     }
 
     private void CadastrarUsuario(View view){
@@ -139,6 +152,7 @@ public class FormCadastro extends AppCompatActivity {
 
     private void IniciarComponentes(){
 
+        irlogin = findViewById(R.id.irlogin);
         Editnome = findViewById(R.id.Editnome);
         Editemail = findViewById(R.id.Editemail);
         Editsenha = findViewById(R.id.Editsenha);

@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,7 +41,7 @@ public class TelaPrincipal extends AppCompatActivity {
 
     private TextView EmailUsuario,NomeUsuario;
     private Button deslogar;
-    private Button addfoto;
+    private ImageButton addfoto;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     String usuarioID;
     private ImageView imagemicone;

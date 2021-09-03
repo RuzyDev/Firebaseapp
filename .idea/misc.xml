@@ -3,11 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ruan.oliveira/Documents/android/Firebaseapp/app/src/main/res/drawable/add.xml" value="0.2890625" />
+        <entry key="..\:/Users/ruan.oliveira/Documents/android/Firebaseapp/app/src/main/res/drawable/bg_button_normal.xml" value="0.1" />
+        <entry key="..\:/Users/ruan.oliveira/Documents/android/Firebaseapp/app/src/main/res/drawable/bg_layer_gradient.xml" value="0.1" />
+        <entry key="..\:/Users/ruan.oliveira/Documents/android/Firebaseapp/app/src/main/res/drawable/botaodeslogar.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/ruan.oliveira/Documents/android/Firebaseapp/app/src/main/res/drawable/editeextbutton.xml" value="0.1" />
+        <entry key="..\:/Users/ruan.oliveira/Documents/android/Firebaseapp/app/src/main/res/drawable/email.xml" value="0.17962962962962964" />
+        <entry key="..\:/Users/ruan.oliveira/Documents/android/Firebaseapp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.17962962962962964" />
+        <entry key="..\:/Users/ruan.oliveira/Documents/android/Firebaseapp/app/src/main/res/drawable/inner.xml" value="0.15572916666666667" />
+        <entry key="..\:/Users/ruan.oliveira/Documents/android/Firebaseapp/app/src/main/res/drawable/perfil.xml" value="0.15572916666666667" />
+        <entry key="..\:/Users/ruan.oliveira/Documents/android/Firebaseapp/app/src/main/res/drawable/pessoa.xml" value="0.15572916666666667" />
         <entry key="..\:/Users/ruan.oliveira/Documents/android/Firebaseapp/app/src/main/res/layout/activity_cadastro.xml" value="0.14270833333333333" />
-        <entry key="..\:/Users/ruan.oliveira/Documents/android/Firebaseapp/app/src/main/res/layout/activity_form_login.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/ruan.oliveira/Documents/android/Firebaseapp/app/src/main/res/layout/activity_form_login.xml" value="0.33" />
         <entry key="..\:/Users/ruan.oliveira/Documents/android/Firebaseapp/app/src/main/res/layout/activity_main.xml" value="0.25885416666666666" />
-        <entry key="..\:/Users/ruan.oliveira/Documents/android/Firebaseapp/app/src/main/res/layout/activity_tela_principal.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/ruan.oliveira/Documents/android/Firebaseapp/app/src/main/res/layout/form_cadastro_activity.xml" value="0.1" />
+        <entry key="..\:/Users/ruan.oliveira/Documents/android/Firebaseapp/app/src/main/res/layout/activity_profile.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/ruan.oliveira/Documents/android/Firebaseapp/app/src/main/res/layout/activity_tela_principal.xml" value="0.33" />
+        <entry key="..\:/Users/ruan.oliveira/Documents/android/Firebaseapp/app/src/main/res/layout/form_cadastro_activity.xml" value="0.20675105485232068" />
       </map>
     </option>
   </component>

@@ -1,40 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".TelaPrincipal">
+
+<androidx.appcompat.widget.AppCompatImageView
+    android:src="@drawable/landscapecadastro"
+    android:scaleType="centerCrop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></androidx.appcompat.widget.AppCompatImageView>
+
+<View
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    tools:context=".TelaPrincipal">
+    android:background="@drawable/bg_layer_gradient">
 
-    <ImageView
-        android:id="@+id/containerUser"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+</View>
+
+<ImageView
+    android:id="@+id/containerUser"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="30dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
 
 
-    <Button
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="@drawable/add"
-        app:layout_constraintRight_toLeftOf="@id/containerUser"
-        android:id="@+id/addfoto"
-         />
+<ImageButton
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/add"
+    android:background="@drawable/bg_button_normal"
+    app:layout_constraintTop_toTopOf="@id/containerUser"
+    app:layout_constraintRight_toLeftOf="@id/containerUser"
+    android:id="@+id/addfoto"
+    />
 
-    <ImageView
-        android:id="@+id/imagemicone"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:layout_constraintStart_toStartOf="@id/containerUser"
-        app:layout_constraintEnd_toEndOf="@id/containerUser"
-        app:layout_constraintTop_toTopOf="@id/containerUser"
-        app:layout_constraintTop_toBottomOf="@id/containerUser"
-        />
+<ImageView
+    android:background="@drawable/pessoa"
+    android:id="@+id/imagemicone"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="8dp"
+    app:layout_constraintStart_toStartOf="@id/containerUser"
+    app:layout_constraintEnd_toEndOf="@id/containerUser"
+    app:layout_constraintTop_toTopOf="@id/containerUser"
+    app:layout_constraintTop_toBottomOf="@id/containerUser"
+    />
+
 
     <ImageView
         android:id="@+id/iconeUser"
@@ -93,24 +110,23 @@
         />
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/black"
-        android:text="Deslogar"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:padding="20dp"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="50dp"
-        android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@id/EmailUsuario"
-        android:id="@+id/deslogar"
+<androidx.appcompat.widget.AppCompatButton
 
-        />
+    android:text="Deslogar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginStart="18dp"
+    android:textStyle="bold"
+    android:textSize="20dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginEnd="18dp"
+    android:layout_marginBottom="36dp"
+    android:textAllCaps="false"
+    android:background="@drawable/botaodeslogar"
+    android:textColor="@android:color/white"
+    app:layout_constraintTop_toBottomOf="@id/EmailUsuario"
+    android:id="@+id/deslogar">
 
-
-
+</androidx.appcompat.widget.AppCompatButton>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
